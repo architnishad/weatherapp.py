@@ -25,7 +25,6 @@ def data_get():
     wd_label1.config(text=data["weather"][0]["description"])
     temp_label1.config(text=f"{data['main']['temp'] - 273.15:.2f} °C")
     press_label1.config(text=f"{data['main']['pressure']} hPa")
-in
 
 win = Tk()
 win.title("Weather App")
