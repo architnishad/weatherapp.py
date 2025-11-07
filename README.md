@@ -25,7 +25,7 @@ def data_get():
     wd_label1.config(text=data["weather"][0]["description"])
     temp_label1.config(text=f"{data['main']['temp'] - 273.15:.2f} °C")
     press_label1.config(text=f"{data['main']['pressure']} hPa")
-
+in
 
 win = Tk()
 win.title("Weather App")
@@ -38,16 +38,14 @@ name_label.place(x=25, y=50, height=50, width=450)
 
 # City Dropdown
 city_name = StringVar()
-list_name = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+list_name = [   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
     "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir",
     "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
     "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha",
     "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
     "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
     "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli",
-    "Daman and Diu", "Lakshadweep", "Delhi", "Puducherry"
-]
+    "Daman and Diu", "Lakshadweep", "Delhi", "Puducherry"] 
 
 com = ttk.Combobox(win, values=list_name, font=("Times New Roman", 20), textvariable=city_name)
 com.place(x=25, y=120, height=50, width=450)
