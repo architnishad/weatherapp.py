@@ -16,6 +16,7 @@ It allows users to check the current weather, temperature, description, and  pre
 ---
 
 ⚙️ Installation & Setup
+
  1️⃣ Clone the Repository
 Bash  
 git clone https://github.com/yourusername/weather-app.git 
@@ -42,17 +43,21 @@ pyinstaller weather_app.py --onefile
 3. Replace "YOUR_API_KEY" inside the Python code with your actual API key.
 
 ---
-💻 Full Source Code
+# 💻 Source Code
 
 from tkinter import *
+
 from tkinter import ttk
+
 import requests
 
 def data_get():
+
     city = city_name.get().strip()
+    
     if not city:
         return
-
+        
     # Replace with your valid API key
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=68418ce436132483c0bce07db5b9f435"
     data = requests.get(url).json()
