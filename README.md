@@ -1,5 +1,48 @@
 # weatherapp.py
-"""This Weather App is built using Python’s Tkinter library for the graphical user interface (GUI) and the OpenWeatherMap API to fetch real-time weather data.  It allows users to check the current weather conditions, temperature, pressure, and description of any selected location (city or state)"""
+
+📖 Description
+The Weather App is a simple desktop application built using Python and Tkinter.  
+It allows users to check the current weather, temperature, description, and  pressure of any city using the OpenWeatherMap API.
+
+---
+
+🧰 Technologies Used
+🐍 Python 3 – Core programming language  
+ 🖥️ Tkinter – For GUI (Graphical User Interface)  
+🌐 Requests – To fetch data from OpenWeatherMap API  
+☁️ OpenWeatherMap API – For live weather data  
+📦 PyInstaller – Used to convert Python script into an executable `.exe` file  
+
+---
+
+⚙️ Installation & Setup
+ 1️⃣ Clone the Repository
+Bash  
+git clone https://github.com/yourusername/weather-app.git 
+cd weather-app
+
+2️⃣ Install Dependencies
+Bash
+pip install requests
+
+3️⃣ Run the Application
+Bash
+python weather_app.py
+
+4️⃣ Create Executable File
+Bash
+pyinstaller weather_app.py --onefile
+
+---
+
+🔑 API Setup
+
+1. Visit OpenWeatherMap
+2. Create a free account and get your API Key
+3. Replace "YOUR_API_KEY" inside the Python code with your actual API key.
+
+---
+💻 Full Source Code
 
 from tkinter import *
 from tkinter import ttk
@@ -26,6 +69,7 @@ def data_get():
     temp_label1.config(text=f"{data['main']['temp'] - 273.15:.2f} °C")
     press_label1.config(text=f"{data['main']['pressure']} hPa")
 
+
 win = Tk()
 win.title("Weather App")
 win.config(bg="blue")
@@ -37,14 +81,16 @@ name_label.place(x=25, y=50, height=50, width=450)
 
 # City Dropdown
 city_name = StringVar()
-list_name = [   "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+list_name = [
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
     "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir",
     "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
     "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha",
     "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
     "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
     "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli",
-    "Daman and Diu", "Lakshadweep", "Delhi", "Puducherry"] 
+    "Daman and Diu", "Lakshadweep", "Delhi", "Puducherry"
+]
 
 com = ttk.Combobox(win, values=list_name, font=("Times New Roman", 20), textvariable=city_name)
 com.place(x=25, y=120, height=50, width=450)
@@ -79,3 +125,37 @@ done_button = Button(win, text="Done", font=("Times New Roman", 20, "bold"), com
 done_button.place(y=190, height=50, width=100, x=200)
 
 win.mainloop()
+
+
+---
+
+📸 Screenshot
+
+![Weather App Screenshot](screenshot.png)
+
+(Add your app screenshot image named screenshot.png in your project folder.)
+
+---
+
+📜 Example Output
+
+City: Delhi  
+Weather: Clear  
+Temperature: 27°C  
+Description: Clear sky  
+Pressure: 1013 hPa
+
+---
+
+🧑‍💻 Author
+
+Archit Nishad
+
+📧 Email: architnishad55@gmail.com
+🔗GitHub: https://github.com/architnishad/weatherapp.py.git
+
+---
+
+🪪 License
+
+This project is open-source and available under the MIT License.
