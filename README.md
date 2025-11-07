@@ -159,8 +159,3 @@ Archit Nishad
 📧 Email: architnishad55@gmail.com
 🔗GitHub: https://github.com/architnishad/weatherapp.py.git
 
----
-
-🪪 License
-
-This project is open-source and available under the MIT License.
