@@ -77,11 +77,11 @@ def data_get():
 
 win = Tk()
 win.title("Weather App")
-win.config(bg="blue")
+win.config(bg="cyan")
 win.geometry("500x570")
 
 # Heading
-name_label = Label(win, text="Weather App", font=("Times New Roman", 30, "bold"), bg="blue", fg="white")
+name_label = Label(win, text="Weather App", font=("Times New Roman", 30, "bold"), bg="cyan", fg="black")
 name_label.place(x=25, y=50, height=50, width=450)
 
 # City Dropdown
