@@ -35,16 +35,24 @@ name_label.place(x=25, y=50, height=50, width=450)
 
 # City Dropdown
 city_name = StringVar()
-list_name = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
-    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir",
-    "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
-    "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha",
-    "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
-    "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
-    "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli",
-    "Daman and Diu", "Lakshadweep", "Delhi", "Puducherry"
+ list_name = [
+    "Delhi", "Mumbai", "Kolkata",  "Chennai",  "Bengaluru",  "Hyderabad", 
+    "Pune", "Ahmedabad", "Jaipur", "Chandigarh", "Lucknow","Kanpur",
+    "Agra",  "Varanasi",  "Patna", "Ranchi",   "Bhopal", "Indore",  
+   "Gwalior",  "Raipur",  "Bhubaneswar", "Cuttack", "Rourkela",
+     "Visakhapatnam", "Vijayawada","Guntur","Tirupati",
+    "Warangal","Nizamabad", "Karimnagar","Nagpur", "Nashik", "Aurangabad",
+    "Solapur","Kolhapur",  "Amritsar","Ludhiana", "Jalandhar", "Patiala",
+    "Shimla","Manali",  "Dehradun", "Haridwar",  "Rishikesh", "Meerut",
+    "Noida", "Ghaziabad", "Faridabad", "Gurgaon","Panaji", "Margao",
+    "Kochi", "Thiruvananthapuram", "Kozhikode", "Thrissur","Coimbatore",
+    "Madurai","Salem","Erode","Tiruchirappalli","Tirunelveli",
+    "Thoothukudi", "Puducherry", "Karaikal", "Aizawl","Imphal","Shillong",
+    "Guwahati", "Silchar", "Dibrugarh", "Itanagar", "Kohima",
+     "Dimapur","Agartala", "Gangtok", "Port Blair","Leh", "Srinagar","Jammu","Kargil"
 ]
+
+    
 
 com = ttk.Combobox(win, values=list_name, font=("Times New Roman", 20), textvariable=city_name)
 com.place(x=25, y=120, height=50, width=450)
