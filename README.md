@@ -138,9 +138,7 @@ win.mainloop()
 
 📸 Screenshot
 
-![Weather App Screenshot](screenshot.png)
-
-(Add your app screenshot image named screenshot.png in
+IMG-20251109-WA0003.jpg
 
 ---
 
