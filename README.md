@@ -138,9 +138,7 @@ win.mainloop()
 
 📸 Screenshot
 
-IMG-20251109-WA0003.jpg
-
----
+![WhatsApp Image 2025-12-15 at 20 48 11_5d8777f8](https://github.com/user-attachments/assets/3d6b25fd-8df7-44e1-9036-401f75c0311d)
 
 📜 Example Output
 
